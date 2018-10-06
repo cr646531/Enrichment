@@ -12,7 +12,7 @@ app.use('/dist', express.static(path.join(__dirname, 'dist')));
 
 const index = path.join(__dirname, 'index.html');
 
-//app.get('/', (req, res)=> res.sendFile(index));
+app.get('/', (req, res)=> res.sendFile(index));
 
 app.get('/api/schools', (req, res, next)=> {
   School.findAll()
@@ -72,7 +72,7 @@ app.delete('/api/students/:id', (req, res, next)=> {
     .catch(next);
 });
 
-//app.listen(port, ()=> console.log(`listening on port ${port}`));
+app.listen(port, ()=> console.log(`listening on port ${port}`));
 
 db.syncAndSeed();
 
