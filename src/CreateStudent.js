@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { createStudent } from './store'
-import { Link } from 'react-router-dom'
 
 class CreateStudent extends React.Component {
 
@@ -25,7 +24,7 @@ class CreateStudent extends React.Component {
   }
 
   onSave(event) {
-    const { createStudent, students } = this.props
+    const { createStudent } = this.props
     const { firstName, lastName, gpa, schoolId } = this.state
 
     event.preventDefault()
@@ -43,7 +42,6 @@ class CreateStudent extends React.Component {
     this.setState({
       schoolId: event.target.value
     })
-    console.log("Change: ", this.state.schoolId);
   }
 
   render() {

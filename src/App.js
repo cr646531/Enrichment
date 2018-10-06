@@ -9,7 +9,6 @@ import School from './School';
 import CreateSchool from './CreateSchool'
 import CreateStudent from './CreateStudent'
 import Nav from './Nav';
-import Add from './Add';
 
 class App extends Component{
   componentDidMount(){

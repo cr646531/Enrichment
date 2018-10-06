@@ -41,7 +41,7 @@ class School extends React.Component {
   }
 
   onSave(event){
-    const { updateSchool, students } = this.props
+    const { updateSchool } = this.props
     const { id, name, address, numStudents } = this.state
 
     event.preventDefault()

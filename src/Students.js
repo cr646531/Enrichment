@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const Students = ({ students, schools })=> {
   let flag = 0;
-  let counter = 0;
 
   return (
     <div>
@@ -37,13 +36,6 @@ const Students = ({ students, schools })=> {
     </div>
   );
 }
-
-// const mapDispatchToProps = (dispatch)=> {
-//   return {
-//     destroyUser: (user)=> dispatch(destroyUser(user)),
-//     reset: ()=> dispatch(reset())
-//   };
-// };
 
 const mapStateToProps = ({ students, schools })=> {
   return {

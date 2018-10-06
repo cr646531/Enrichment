@@ -69,7 +69,6 @@ class Student extends React.Component {
     this.setState({
       schoolId: event.target.value
     })
-    console.log("Change: ", this.state.schoolId);
   }
 
   render(){

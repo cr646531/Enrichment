@@ -33,7 +33,6 @@ app.post('/api/schools', (req, res, next)=> {
 });
 
 app.put('/api/schools/:id', (req, res, next)=> {
-  console.log(req.body)
   School.findById(req.params.id)
     .then( school => school.update(req.body))
     .then( school => res.send(school))
@@ -73,7 +72,7 @@ app.delete('/api/students/:id', (req, res, next)=> {
     .catch(next);
 });
 
-app.listen(port, ()=> console.log(`listening on port ${port}`));
+//app.listen(port, ()=> console.log(`listening on port ${port}`));
 
 db.syncAndSeed();
 
