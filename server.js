@@ -72,7 +72,7 @@ app.delete('/api/students/:id', (req, res, next)=> {
     .catch(next);
 });
 
-app.listen(port, ()=> console.log(`listening on port ${port}`));
+//app.listen(port, ()=> console.log(`listening on port ${port}`));
 
 db.syncAndSeed();
 
