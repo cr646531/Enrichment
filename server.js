@@ -12,7 +12,7 @@ app.use('/dist', express.static(path.join(__dirname, 'dist')));
 
 const index = path.join(__dirname, 'index.html');
 
-app.get('/', (req, res)=> res.sendFile(index));
+//app.get('/', (req, res)=> res.sendFile(index));
 
 app.get('/api/schools', (req, res, next)=> {
   School.findAll()
